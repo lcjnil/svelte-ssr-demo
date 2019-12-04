@@ -1,0 +1,35 @@
+{
+    "name": "svelte-ssr",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "build:client": "webpack --config ./build/webpack.config.client.js",
+        "build:server": "webpack --config ./build/webpack.config.server.js",
+        "build": "npm run build:client && npm run build:server",
+        "start": "node ./src/dev-server.js"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.7.4",
+        "@babel/preset-env": "^7.7.4",
+        "babel-loader": "^8.0.6",
+        "core-js": "^3.4.7",
+        "css-loader": "^3.2.1",
+        "html-webpack-plugin": "^4.0.0-beta.3",
+        "koa": "^2.11.0",
+        "koa-static": "^5.0.0",
+        "mini-css-extract-plugin": "^0.8.0",
+        "prettier": "^1.19.1",
+        "style-loader": "^1.0.1",
+        "svelte-loader": "^2.13.6",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.9.0",
+        "webpack-merge": "^4.2.2",
+        "write": "^2.0.0"
+    },
+    "dependencies": {
+        "lodash": "^4.17.15",
+        "svelte": "^3.16.0"
+    }
+}
